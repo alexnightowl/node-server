@@ -47,7 +47,7 @@ const server = http.createServer((req, res) => {
         }
     })
 })
-
+const PORT = process.env.PORT || 3000
 server.listen(3000, () => {
-    console.log('Server is running...')
+    console.log(`Server is running at port ${PORT}...`)
 })
